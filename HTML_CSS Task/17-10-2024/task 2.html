@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        background-color: rgb(254, 146, 164); 
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        height: 700px; 
+    }
+
+    .container {
+        display: flex; 
+        width: 900px; 
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 10px 10px 10px black; 
+    }
+
+    .image-area {
+        flex: 1;
+        display: flex;
+    }
+
+    .form-area {
+        width: 450px; 
+        background-color: black; 
+        padding: 20px;
+        color: white; 
+        display: flex; 
+        flex-direction: column; 
+    }
+
+    input {
+        width: 60%;
+        padding: 10px; 
+        margin: 10px 0;
+        border: none;
+        background-color: black;
+        color: white; 
+        border-bottom: 2px solid rgb(84, 82, 82);
+    }
+
+    button {
+        background-color: rgb(2, 212, 2); 
+        color: white; 
+        padding: 5px; 
+        border: none; 
+        border-radius: 20px;
+        width: 30%; 
+        margin-left: 10%;
+    }
+
+    img {
+        width: 450px;
+        height: 500px;
+        display: block;
+    }
+
+    h3 {
+        margin: 0; 
+        text-align: left;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="image-area">
+        <img src="C:\Users\nanda\OneDrive\Desktop\Git\HTML-CSS\HTML-CSS\HTML_CSS Task\17-10-2024\Photo\66683687-c7ef-4408-a839-8a2e9c900b30.jpeg">
+    </div>
+    <div class="form-area">
+        <h3>Registration Info</h3>
+        <form>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Address" required>
+            <input type="text" placeholder="Zip Code" required>
+            
+            <select id="state" required style="width: 60%; padding: 10px; margin: 10px 0; border: none; background-color: black; color: white; border-bottom: 2px solid white;">
+                <option value="" disabled selected> state</option>
+                <option value="KL">kerala</option>
+                <option value="TN">Tamil Nadu</option>
+                <option value="KA">karnataka</option>
+                <option value="DL">Delhi</option>
+            </select>
+
+            <input type="text" placeholder="Username" required>
+            <input type="email" placeholder="Email" required><br><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
