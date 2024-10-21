@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: rgb(68, 150, 106);
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            background-color: white;
+            width: 40%;
+            height: auto;
+        }
+        .heading{
+            background-color: darkslategrey;
+            text-align: center;
+            color: white;
+            margin-top: 0;
+        }
+        label{
+            margin: 10px;
+            
+        }
+        input{
+            border-left: 0px;
+            border-right: 0px;
+            border-bottom: 0px;
+            margin: 15px;
+        }
+        button{
+            background-color: green;
+             margin-left: 50%;
+             border: none;
+             padding: 5px;
+             width: 20%;
+             border-radius: 20px;
+             margin-top: 5%;
+             margin-bottom: 5%;
+        }
+        textarea{
+            width: 70%;
+            border-left: 0px;
+            border-right: 0px;
+            border-top: 0px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1 style="margin-bottom: 0;">Client Details</h1>
+        <p style="margin: 0; padding: 0; font-size: smaller;">Enter the details of all Incoming Clients </p>
+        </div>
+        <form>
+            <label for="ClientName"> Client Name*</label>
+            <input type="text" id="ClientName" name="ClientName" required><br>
+            <label for="Company"> Company*</label>
+            <input type="text" id="Company" name="Company" required><br>
+            <label for="Title"> Title</label>
+            <input type="text" id="Title" name="Title" ><br>
+            <label for="Department"> Department*</label>
+            <select id="Department" name="Department" required style="border: none;">
+                <option value=""disabled selected>select</option>
+            </select><br>
+
+            <label for="prefrdCnts">Preferred Contact Method* </label>
+            <div>
+            <input type="radio" id="email" name="prefrdCnts" value="email" required>
+            <label for="email">Email</label>
+            <input type="radio" id="phone" name="prefrdCnts" value="phone" required>
+            <label for="phone">Phone</label>
+            </div><br>
+            <label for="address">Company Adress</label>
+            <input type="text" id="address" name="address" required placeholder="Street Adress">
+            <input type="text" id="address2" name="address2"  placeholder="Address Line 2">
+            <input type="text" id="city" name="city" required  placeholder="City">
+            <input type="text" id="state" name="state" required placeholder="State/Region/Province">
+            <input type="text" id="postalCode" name="postalCode" required  placeholder="Postal / Zip Code"><br>
+            <select id="country" name="country" required >
+                <option value="" disabled selected>Select Country</option>
+            </select><br>
+
+            <label for="website">Company Website*</label>
+            <input type="url" id="website" name="website" required><br>
+
+            <label for="logo">Company logo*</label>
+            <input type="file" id="logo" name="logo" required><br>
+
+            <label for="workinghrs">Working hours*</label>
+            <input type="text" id="workinghrs" name="workinghrs" required><br>
+
+            <label for="workingdays">Working Days*</label>
+            <input type="text" id="workingdays" name="workingdays" required><br>
+
+            <label for="billingcycle">Billing Cycle*</label>
+            <input type="date" id="billingcycle" name="billingcycle" required>\<br>
+
+            <label for="additionalinfo">Additional Info*</label>
+            <textarea type="text" id="workingdays" name="workingdays" rows="4" ></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
