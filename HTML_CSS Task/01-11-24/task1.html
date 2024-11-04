@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-image: url(ss.jpeg);
+                background-size: 1500px 770px;
+            }    
+            .navbar{
+                background-color: green;
+                color: white;
+                justify-content: space-evenly;
+                width: 100%;
+                height: 50px;
+                display: flex;
+            }
+            .box1{
+                text-align: center;
+                width: 150px;
+                height: 25px;
+                margin-top: 10px;
+                padding-top: 10px;
+            }
+            .box2{
+                text-align: center;
+                width: 150px;
+                height: 25px;
+                margin-top: 10px;
+                padding-top: 10px;
+                
+            }
+            .box21{
+                position: relative;
+                text-align: center;
+                width: 150px;
+                height: 25px;
+                margin-top: 10px;
+                padding-top: 10px;
+                
+            }
+            li{
+                list-style-type: none;
+                margin-left: 15px;
+                padding: 10px 10px 1px 0px;
+                width: 150px;
+                border-bottom: dotted 1px white;
+                
+            }
+            .aftermouse{
+                display: none;
+                width: 230px;
+                background-color: green;
+            }  
+            .sub-box{
+                position: absolute;
+                top: -10px;
+                left: 190px;
+                display: none;
+                width: 230px;
+                background-color: green;
+            }
+            .box1:hover{
+                background-color: rgb(3, 176, 3);
+                border-radius: 5px;
+            }
+            .box2:hover{
+                background-color: rgb(3, 176, 3);
+                padding-bottom: 5px;
+                border-radius: 5px;
+            }
+            .box21:hover{
+                background-color: rgb(3, 176, 3);
+                padding-bottom: 5px;
+                padding-right: 50px;
+                border-radius: 5px;
+            }
+            .box2:hover .aftermouse{
+                display: block;
+            }
+           .box21:hover .sub-box{
+            display: block;
+           }
+        </style>
+    </head>
+    <body>
+          <div class="navbar">
+            <div class="box1">
+                <span> Home</span>
+            </div>
+           <div class="box1"> <span> About Us</span></div>
+            <div class="box2">
+                <span>Services</span>
+                <ul class="aftermouse">
+                    <li class="box2">Web Designing</li>
+                    <li class="box2">Marketing</li>
+                    <li class="box21">Mobile App
+                        <ul class="sub-box">
+                            <li class="box2">Android App</li>
+                            <li class="box2">iOS App</li>
+                            <li class="box2">Iconic App</li>
+                            <li class="box2">Flutter App</li>
+                            <li class="box2">Unity App</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="box1"><span> Clients</span></div>
+            <div class="box1"><span> Investers</span></div>
+            <div class="box1"><span> Pricing</span></div>
+            <div class="box1"><span> Training</span></div>
+            <div class="box1"><span> Contact</span></div>
+          </div>
+    </body>
+</html>
