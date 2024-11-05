@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .navbar{
+                background-color: rgb(223, 231, 245);
+                width: 100%;
+                height: 50px;
+                text-align: center;
+            }
+            h1{
+                color: skyblue;
+                font-family: cursive;
+            }
+            .main{
+                background-color: rgb(29, 29, 30);
+                width: 100%;
+                height: 690px;
+                
+            }
+            .sub{
+                width: 500px;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                margin-left: 250px;
+                padding-right: 10px;
+            }
+            img{
+                margin-top: 10px;
+                height: 180px;
+                width: 200px;
+            }
+            .image-container{
+                width: 200px;
+                position: relative;
+            }
+            .caption{
+                display: none;
+                position: absolute;
+                background-color: rgb(223, 231, 245,0.7);
+                color: black;
+                z-index: 1;
+            }
+            .image-container:hover .caption{
+                display: block;
+            }
+            h5{
+                background-color: beige;
+                font-family: cursive;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <h1>Gallery</h1>
+        </div>
+        <div class="main">
+            <div class="sub">
+                <div class="image-container">
+                    <a target="_blank" href="C:\Users\nanda\Downloads\photos\pp.jpg">
+                        <img src="C:\Users\nanda\Downloads\photos\pp.jpg" alt="You"></a>
+                        <h5>The photos</h5>
+                        <div class="caption">size:240kb<br>location: Camera </div>
+                </div>
+                <div class="image-container">
+                    <a target="_blank" href="C:\Users\nanda\Downloads\photos\pp1.jpg">
+                        <img src="C:\Users\nanda\Downloads\photos\pp1.jpg" alt="cousin"></a>
+                        <h5>The Photos</h5>
+                    <div class="caption">size:500kb<br>location: whatsapp</div>
+                </div>
+                <div class="image-container">
+                    <a target="_blank" href="C:\Users\nanda\Downloads\photos\pp3.jpg">
+                        <img src="C:\Users\nanda\Downloads\photos\pp3.jpg" alt="friend"></a>
+                        <h5>The photos</h5>
+                    <div class="caption">size:550kb<br>location: whatsapp</div>
+                </div>
+                <div class="image-container">
+                    <a target="_blank" href="C:\Users\nanda\Downloads\photos\pp4.jpg">
+                        <img src="C:\Users\nanda\Downloads\photos\pp4.jpg" alt="Uncle"></a>
+                        <h5>The photos</h5>
+                        <div class="caption">size:650kb<br>location: Camera</div>
+                </div>
+                
+                <div class="image-container">
+                    <a target="_blank" href="C:\Users\nanda\Downloads\photos\pp5.jpg">
+                        <img src="C:\Users\nanda\Downloads\photos\pp5.jpg" alt="nephew"></a>
+                        <h5>The photos</h5>
+                        <div class="caption">size:350kb<br>location: Camera</div>
+                </div>
+                <div class="image-container">
+                    <a target="_blank" href="C:\Users\nanda\Downloads\photos\pp6.jpg">
+                        <img src="C:\Users\nanda\Downloads\photos\pp6.jpg" alt="Tree"></a>
+                        <h5>The photos</h5>
+                        <div class="caption">size:254kb<br>location: Camera</div>
+                </div>
+                <div class="image-container">
+                    <a target="_blank" href="C:\Users\nanda\Downloads\photos\laptop2.jpg">
+                        <img src="C:\Users\nanda\Downloads\photos\laptop2.jpg" alt="Computer"></a>
+                        <h5>The photos</h5>
+                        <div class="caption">size:789kb<br>location: whatsapp</div>
+                </div>
+            </div> 
+        </div>
+    </body>
+</html>
