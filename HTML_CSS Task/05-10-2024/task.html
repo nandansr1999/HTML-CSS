@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            .navbar{
+                display: flex;
+                flex-wrap: wrap;
+                max-width: 100%;
+                height: auto;
+                justify-content: space-between;
+                background-color: rgb(255, 253, 253);
+            } 
+            .title{
+                position: relative;
+                display: flex;
+                margin-left: 200px;
+            }
+            h3{
+                position: absolute;
+                top:-15px;
+                left: 26px;
+            }
+            .lists{
+                width: 40%;
+                color: gray;
+                display: flex;
+                justify-content: space-evenly;
+            }
+            li{
+                list-style-type: none;
+            }
+            .main-con{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-top: 150px;
+                position: relative;
+                height: auto;
+            }
+            .sub-cont{
+                left: 300px;
+                height: auto;
+                max-width: 300px;
+
+            }
+            p{
+                color: gray;
+            }
+            button{
+                background-color: rgb(245, 56, 56);
+                color: white;
+                width: 150px;
+                padding: 10px;
+                border-radius: 5px;
+                border: none;
+            }
+            .image{
+        
+            }
+            .image img{
+                width: 500px;
+                border-radius: 5px;
+                height: auto;
+            }
+            @media (max-width:1000px){
+                .navbar{
+                    flex-direction: column;
+                    
+                }
+                .title{
+                    margin-left: 0px;
+                }
+                .main-con{
+                    flex-direction: column;
+                    
+                }
+                .image img{
+                    width: 100%;
+                    max-width: 400px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="title">
+                <img src="C:\Users\nanda\OneDrive\Desktop\Nandan\photos\d.png" height="25px">
+                <h3>elivery</h3>
+            </div>
+            <div class="lists">
+                <li>Home</li>
+                <li>Services</li>
+                <li>About</li>
+                <li>How It Works</li>
+                <li>Testimonials</li>
+            </div>
+        </div>
+        <div class="main-con">
+            <div class="sub-cont">
+                <h1><b>Home Delivery</b> From<br>Stores Near You</h1>
+                <p>Lorem ipsum dolor sit amed consector adipiscing elit. Faucibius<br>
+                in libero risus semper habitant arcu eget.Ft integer facilist<br> eget dolor sit amed consector adipiscing.</p>
+                <button>Download App</button>
+            </div>
+            <div class="image">
+                <img src="C:\Users\nanda\OneDrive\Desktop\Nandan\photos\deli.png" >
+            </div>
+        </div>
+    </body>
+</html>
