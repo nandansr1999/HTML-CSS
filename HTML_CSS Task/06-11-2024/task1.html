@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .navbar{
+                display: flex;
+                flex-wrap: wrap;
+                max-width: 100%;
+                height: auto;
+                justify-content: space-between;
+            }
+            .title{
+                display: flex;
+                padding: 20px;
+                margin-left: 80px;
+            }
+            .lists{
+                width: 40%;
+                display: flex;
+                justify-content: space-evenly;
+                padding: 20px;
+            }
+            .maincont{
+                background-color: rgb(229, 254, 229);
+
+            }
+            .subcont{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                padding-top: 100px;
+            }
+            .buttons{
+                display: flex;
+            }
+            .containerarea{
+                width: 80%;
+                display: flex;
+                justify-content: space-evenly;
+                padding-bottom: 68px;
+            }
+            .container{
+                background-color: white;
+                width: 200px;
+                height: 200px;
+                
+            }
+            button{
+                background-color: rgb(118, 235, 92);
+                color: white;
+                width: 150px;
+                padding: 7px;
+                border: none;
+                border-radius: 20px;
+            }
+            li{
+                list-style-type: none;
+                margin-right: 10px;
+            }
+            p{
+                color: grey;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+            img{
+                width: 300px;
+                height: auto;
+            }
+            h3{
+                text-align: center;
+                margin-top: 80px;
+                
+            }
+            @media (max-width:1000px){
+                .navbar{
+                    flex-direction: column;
+                }
+                .title{
+                    margin-left: 0px;
+                }
+                .subcont{
+                    flex-direction: column;
+                }
+                .buttons{
+                    flex-direction: column;
+                }
+                .containerarea{
+                    flex-direction: column;
+                }
+                .container{
+                    margin-top: 30px;
+                    max-width: 100px;
+                    max-height: 100px;
+                }
+                img{
+                    width: 100%;
+                    max-width: 200px;
+                }
+                p{
+                    max-width: 100px;
+                }
+                h3{
+                    max-width: 100px;
+                    margin-top: 40px;
+                    font-size: small;
+                }
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="title">
+                <h2 style="color: rgb(113, 255, 47);">e</h2><h2>Startup</h2>
+            </div>
+            <div class="lists">
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Features</li>
+                <li>Pricing</li>
+                <li>Dropdown</li>
+                <li>Contacts</li>
+            </div>
+        </div>
+        <div class="maincont">
+            <div class="subcont">
+                <div class="contents">
+                    <h1>eStartup</h1>
+                    <p>Lorem ipsum dolor sit amed consector adipiscing elit. Faucibius
+                        in libero risus semper<br> habitant arcu eget.Ft integer facilist\</p>
+                        <div class="buttons">
+                            <button>Get Started</button>
+                            <button style="color: rgb(79, 250, 0); background-color:rgb(229, 254, 229) ;">Watch Video</button>
+                        </div>
+                </div>
+                <div class="image">
+                    <img src="C:\Users\nanda\Downloads\photos\laptop2.avif" alt="">
+                </div>
+            </div>
+            <div class="containerarea">
+                <div class="container">
+                    <h3 >Lorem Ipsum</h3>
+                </div>
+                <div class="container">
+                    <h3>Sed ut<br>percipiatis</h3>
+                </div>
+                <div class="container">
+                    <h3>Magni Dolores</h3>
+                </div>
+                <div class="container">
+                    <h3>Nemo Enim</h3>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
