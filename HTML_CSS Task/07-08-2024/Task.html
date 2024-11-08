@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url(ss.jpeg);
+                background-size: 1800px 800px;
+                background-repeat: no-repeat;
+            }
+            .navbar{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+            }
+            .lists{
+                align-items: center;
+                width: 500px;
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .maincnt{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-top: 80px;
+                gap: 20px;
+                max-width: 100%;
+                height: auto;
+            }
+            .sub{
+                max-width: 600px;
+            }
+
+            li{
+                list-style-type: none;
+            }
+            img{
+                width: 400px;
+                height: 400px;  
+                border-radius: 200px;
+                transition: transform 3s;  
+            }
+            button{
+                width: 130px;
+                height: 30px;
+                border: none;
+                border-radius: 5px;
+                background-color: rgb(255, 166, 0);
+                color: white;
+            }
+            h2{
+                color:  rgb(255, 166, 0);
+            }
+            img:hover{
+                transform: rotate(360deg);
+            }
+            @media(max-width:1000px){
+                .navbar{
+                    flex-direction: column;
+                }
+                .maincnt{
+                    flex-direction: column;
+                }
+                img{
+                    max-width: 200px;
+                    max-height: 200px;
+                }
+                p{
+                    width: 100px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="title"><h2>Restoran</h2></div>
+            <div class="lists">
+                <li>Home</li>
+                <li>About</li>
+                <li>Service</li>
+                <li>Menu</li>
+                <li>Pages</li>
+                <li>Contact</li>
+                <button>Book A Table</button>
+            </div>
+        </div>
+        <div class="maincnt">
+            <div class="sub">
+                <h1>Enjoy Our<br>Delicious Meal</h1>
+                <p>Lorem ipsum dolor sit amed consector adipiscing elit. Faucibius
+                    in libero risus semper habitant arcu eget.Ft integer facilist
+                    eget dolor sit amed consector adipiscing.</p>
+                    <button>Book A Table</button>
+            </div>
+            <div class="Image">
+                <img src="C:\Users\nanda\Downloads\photos\pp4.jpg" >
+            </div>
+        </div>
+    </body>
+</html>
