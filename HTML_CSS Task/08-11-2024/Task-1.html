@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .heading{
+                background-color: rgb(234, 232, 232);
+                max-width:100%;
+                text-align: center;
+            }
+             .navbar{
+                max-width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                justify-content:space-between;
+                border: 1px solid gainsboro;
+            }
+            .lists{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-top: 20px;
+                gap: 10px;
+            }
+            .title{
+
+            }
+            .content{
+                max-width: 95%;
+                margin-top: 50px;
+                margin-left: 30px;
+                column-count: 3;
+                column-rule: solid 1px;
+            }
+            footer{
+                background-color:rgb(234, 232, 232);
+                padding: 15px;
+                text-align: center;
+                margin-top: 204px;
+            }
+            h2{
+                font-family: 'Times New Roman', Times, serif;
+                padding: 10px;
+            }
+            li{
+                list-style-type: none;
+                margin-right: 20px;
+            }
+            img{
+                max-width:400px;
+                height: auto;
+            }
+            h3{
+                margin-top: 10px;
+                padding: 10px;
+            }
+            p{
+                margin-top: 5;
+            }
+            @media (max-width:1000px){
+                .navbar{
+                    justify-content: space-evenly;
+                    flex-direction: column;
+                    gap: 0px;
+                }
+                .lists{
+                    flex-direction: column;
+                }
+                img{
+                    max-width: 200px;
+                }
+                p{
+                    max-width: 100px;
+                }
+                h2{
+                    max-width: 100px;
+                }
+                .content{
+                    max-width: 700px;
+                }
+                footer{
+                    text-align: left;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="heading"><h2>Newspaper.</h2></div>
+        <div class="navbar">
+            <div class="title"><h2>Newspaper.</h2></div>
+            <div class="lists">
+                <li>Home Page</li>
+                <li>Simple Post</li>
+                <li>About Us</li>
+                <li>Blog</li>
+            </div>
+        </div>
+        <div class="content">
+            <h3>Fashion Category</h3>
+            <img src="C:\Users\nanda\Downloads\photos\pp6.jpg" >
+            <p>11 December 2021 - Some interesting inspirations and camera settings during the photo session. 
+                We create something better with every shot</p>
+            <h3>Modern Post</h3>
+            <img src="C:\Users\nanda\Downloads\photos\laptop2.jpg" >
+            <p>11 December 2021- Newspaper creates with a hobby. We focus on the development of ouR articles
+                to provide engaging content</p>
+            <h3>Latest Trends</h3>
+            <p>In the World of fashion, staying on the top of trends is crucial. Our latest trends section 
+                explores the sdtyles of that are making the waves in the industry today.</p>
+            <h3>Fashion Bloggers</h3>
+            <p>In the World of fashion, staying on the top of trends is crucial. Our latest trends section 
+                explores the sdtyles of that are making the waves in the industry today with the latest news aroiund the world</p>
+        </div>
+        <div>
+            <footer>Newspaper.@ 2024</footer>
+        </div>
+    </body>
+</html>

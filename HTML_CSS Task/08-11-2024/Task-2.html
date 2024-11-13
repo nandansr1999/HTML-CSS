@@ -1,0 +1,374 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .navbar{
+                background-color: beige;
+                display: flex;
+                height: auto;
+                justify-content: space-between;
+                gap: 600px;
+            }
+            .title{
+                padding: 10px;
+            }
+            .title h3, .footers h3{
+                color: rgb(197, 110, 34);
+                font-size: 150%;
+            }
+            .title p, .footers p{
+                color: rgb(57, 138, 57);
+                font-size: smaller;
+            }
+            .lists{
+                width: 20%;
+                height: auto;
+                display: flex;
+                justify-content: space-evenly;
+                padding: 20px;
+            }
+            li{
+                list-style-type: none;
+            }
+            .phase1{
+                background-image: url(laptop2.jpg);
+                color: white;
+                height: 300px;
+            }
+            .content1{
+                padding: 50px;
+                padding-top: 100px;
+                margin-left: 50px;
+            }
+            .content1 h1{
+                font-size: 300%;
+                font-family: 'Times New Roman', Times, serif;
+                margin-bottom: 5px;
+            }
+            .content1 p{
+                font-size: smaller;
+                margin-bottom: 20px;
+            }
+            .content1 button{
+                background-color: rgb(249, 91, 0);
+                padding: 8px;
+                color: white;
+                border: none;
+                border-radius: 5px;
+            }
+            .phase2{
+                display: flex;
+                justify-content: space-around;
+                gap: 180px;
+                height: 400px;
+            }
+            .content2{
+                margin-top: 80px;
+                width: 35%;
+            }
+            .content2 h1{
+                font-family: 'Times New Roman', Times, serif;
+                padding-bottom: 5px;
+            }
+            .content2 p{
+                font-size: smaller;
+                padding-bottom: 15px;
+            }
+             button{
+                padding: 5px;
+                border: 1px solid;
+                border-radius: 2px;
+            }
+            .image1{
+                margin-top: 80px;
+            }
+            .image1 img{
+                width: 500px;
+                height: 250px;
+            }
+            .phase3{
+                background-color:rgb(199, 96, 36);
+                height: 250px;
+                width: 100%;
+                color: white;
+                align-content: center;
+                
+            }
+            .content3{
+                max-width: 600px;
+                text-align: center;
+                margin-left: 400px;
+            }
+            .content3 p{
+                font-size: 70%;
+            }
+            .phase4{
+                display: flex;
+                justify-content: space-around;
+                height: 550px;
+            }
+            .container{
+                width: 1100px;
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 50px;
+            }
+            .image2 h2, .image3 h2, .image4 h2{
+                margin-top: 10px;
+                padding: 5px;
+            }
+            .image2 p, .image3 p, .image4 p{
+                width: 300px;
+                margin-top: 10px;
+                margin-bottom: 25px;
+            }
+            img{
+                width: 300px;
+                height: 300px;
+            }
+            .phase5{
+                background-color: rgb(21, 73, 56);
+                color: white;
+                height: 400px;
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+            }
+            .content4{
+                margin-left: 100px;
+                margin-top: 100px;
+            }
+            .forms{
+                margin-top: 60px;
+                margin-right: 100px;
+                width: 500px;
+            }
+            input, textarea{
+                background-color: rgb(14, 56, 56);
+                padding: 5px;
+                border-radius: 5px;
+                border:solid 1px rgb(56, 81, 72) ;
+            }
+            .footers{
+                display: flex;
+                justify-content: space-between;
+                background-color: beige;
+                padding: 10px;
+            }
+            .logos{
+                margin-top: 10px;
+                width: 10%;
+                display: flex;
+                justify-content: space-evenly;
+            }
+            @media (max-width:1000px){
+                .navbar{
+                    flex-direction: column;
+                    gap: 20px;
+                }
+                .lists{
+                    flex-direction: column;
+                }
+                .phase1{
+                    height: auto;
+                }
+                .content1{
+                    margin-left: 0px;
+                    padding: 0px;
+                    padding-top: 20px;
+                }
+                .content1 h1{
+                    font-size: 150%;
+                }
+                .content1 button{
+                    padding: 5px;
+                    margin-bottom: 20px;
+                }
+                .phase2{
+                    flex-direction: column;
+                    gap: 10px;
+                    height: auto;
+                }
+                .content2{
+                margin-top: 10px;
+                width: 35%;
+                }
+                .image1 img{
+                width: 200px;
+                height: 150px;
+                }
+                .image1{
+                    margin-top: 20px;
+                }
+                .content3{
+                max-width: 50%;
+                text-align: center;
+                margin-left: 10px;
+                }
+                .content3 p{
+                    width: 200px;
+                    font-size: 50%;
+                }
+                .phase4{
+                flex-direction: column;
+                height: auto;
+            }
+            .container{
+                width: 500px;
+                flex-direction: column;
+                margin-top: 10px;
+            }
+            .image2 h2, .image3 h2, .image4 h2{
+                margin-top: 10px;
+                padding: 5px;
+            }
+            .image2 p, .image3 p, .image4 p{
+                width: 200px;
+                margin-top: 5px;
+                margin-bottom: 10px;
+            }
+            img{
+                margin-top: 10px;
+                width: 150px;
+                height: 100px;
+            }
+            .phase5{
+               flex-direction: column;
+                height: auto;
+                gap: 10px;
+            }
+            .content4{
+                margin-left: 10px;
+                margin-top: 10px;
+            }
+            .content4 p{
+                width: 200px;
+                font-size: 20%;
+            }
+            .content4 h3{
+                width: 120px;
+                font-size: medium;
+            }
+            .forms{
+                margin-top: 10px;
+                margin-right: 0px;
+                max-width:200px;
+            }
+            input, textarea{
+                width: 150px;         
+            }
+            .footers{
+                flex-direction: column;
+                gap: 20px;
+            }
+            .logos{
+                flex-direction: column;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="title">
+                <h3>The Tutor Spot</h3>
+                <p>Online Tutoring Services</p>
+            </div>
+            <div class="lists">
+                <li>About</li>
+                <li>Services</li>
+                <li>Contacts</li>
+                <i class="fa-brands fa-instagram" style="color: #cb7615;"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></i>
+                <i class="fa-brands fa-facebook" style="color: #cb7615;"></i>
+                <i class="fa-brands fa-twitter" style="color: #cb7615;"></i>
+            </div>
+        </div>
+        <div class="phase1">
+            <div class="content1">
+                <h1>Toronto's most trusted tutoring</h1>
+                <p>A Place where leaners in Grade 1 through 7 can get help with their studies.<br>
+                Friendly staff and a comfortable atmosphere make learning easy. </p>
+                <button>Book Your appointment</button>
+            </div>
+        </div>
+        <div class="phase2">
+            <div class="content2">
+                <h1>About us</h1>
+                <p>Warm, caring and great at relating to kids, our tutors in Toronto know how to engage and motivate each child
+                     in a personal way-building confiderice and smiles, as well as skills and better scores.<br><br>
+                    We offer in-depth, expert tutoring in math, humanities, and science. Our services currently span Grades 1 through 7.</p>
+                <button>Learn more</button>
+            </div>
+            <div class="image1">
+                <img src="C:\Users\nanda\Downloads\photos\pp6.jpg" >
+            </div>
+        </div>
+        <div class="phase3">
+            <div class="content3">
+                <h3>"The Tutor Spot in Toronto has been a great help to our family. 
+                    Our son was struggling in school and 
+                    they were able to help him catch up and even get ahead. 
+                    The staff is caring and competent and we would recommend them to anyone."</h3>
+                    <p>-Maddie F, Toronto</p>
+            </div>
+        </div>
+        <div class="phase4">
+            <div class="container">
+            <div class="image2">
+                <img src="C:\Users\nanda\Downloads\photos\pp1.jpg" >
+                <h2>Online tutoring</h2>
+                <p>great at relating to kids, our tutors in Toronto know how to engage and motivate each child
+                    in a personal way-building confiderice</p>
+                    <button>Learn more</button>
+            </div>
+            <div class="image3">
+                <img src="C:\Users\nanda\Downloads\photos\pp4.jpg" >
+                <h2>Online tutoring</h2>
+                <p>great at relating to kids, our tutors in Toronto know how to engage and motivate each child
+                    in a personal way-building confiderice </p>
+                    <button>Learn more</button>
+            </div>
+            <div class="image4">
+                <img src="C:\Users\nanda\Downloads\photos\pp3.jpg" >
+                <h2>Online tutoring</h2>
+                <p>great at relating to kids, our tutors in Toronto know how to engage and motivate each child
+                    in a personal way-building confiderice</p>
+                    <button>Learn more</button>
+            </div>
+        </div>
+        </div>
+        <div class="phase5">
+            <div class="content4">
+                <h3>Book a consultation with us</h3>
+                <p style="font-size: smaller;">great at relating to kids, our tutors in Toronto know<br> how to engage and motivate each child<br><br>
+                    great at relating to kids, our tutors in Toronto know how to engage and motivate each child</p>
+            </div>
+            <div class="forms">
+                <form >
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    
+                    <label for="emailad">Email Address*</label>
+                    <input type="email" id="emailad" name="emailad" required>
+                    
+                    <label for="mess">Message</label>
+                    <textarea name="mess" cols="70" rows="15"></textarea>
+                </form>
+            </div>
+        </div>
+        <div class="footers">
+            <div>
+            <h3 style="font-size: medium;">The Tutor Spot</h3>
+            <p>Online Tutoring Services</p>
+            </div>
+            <div class="logos">
+                <i class="fa-brands fa-instagram" style="color: #008bf5;"></i>
+                <i class="fa-brands fa-facebook" style="color: #008bf5;"></i>
+                <i class="fa-brands fa-twitter" style="color: #008bf5;"></i>
+            </div>
+        </div>
+    </body>
+</html>
